@@ -1,9 +1,6 @@
 [![GitHub Actions Marketplace](https://img.shields.io/badge/action-marketplace-blue.svg?logo=github&color=orange)](https://github.com/marketplace/actions/docker-stack-deploy-action)
 [![Release version badge](https://img.shields.io/github/v/release/leonidgrishenkov/docker-stack-deploy)](https://github.com/leonidgrishenkov/docker-stack-deploy/releases)
 
-![GitHub Repo stars](https://img.shields.io/github/stars/leonidgrishenkov/docker-stack-deploy?style=flat-square)
-[![license badge](https://img.shields.io/github/license/leonidgrishenkov/docker-stack-deploy)](./LICENSE)
-
 GitHub Action and Docker image used to deploy a Docker stack on a Docker Swarm.
 
 
