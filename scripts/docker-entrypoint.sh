@@ -1,7 +1,6 @@
 #!/bin/bash
 set -e
 
-# Use root home folder
 SSH_DIR="/root/.ssh"
 SSH_KEY="${SSH_DIR}/docker"
 KNOWN_HOSTS="${SSH_DIR}/known_hosts"
@@ -29,14 +28,13 @@ configure_ssh_key() {
 }
 
 configure_env_file() {
-  printf '%s' "$ENV_FILE" > "${ENV_FILE_PATH}"
+  echo -e "$ENV_FILE" > "${ENV_FILE_PATH}"
   env_file_len=$(grep -v '^#' ${ENV_FILE_PATH}|grep -v '^$' -c)
   if [[ $env_file_len -gt 0 ]]; then
     echo "Environment Variables: Additional values"
     if [ "${DEBUG}" != "0" ]; then
       echo "Environment vars before: $(env|wc -l)"
     fi
-    # shellcheck disable=SC2046
     export $(grep -v '^#' ${ENV_FILE_PATH} | grep -v '^$' | xargs -d '\n')
     if [ "${DEBUG}" != "0" ]; then
       echo "Environment vars after: $(env|wc -l)"
