@@ -125,3 +125,7 @@ jobs:
             VAR1=value
             VAR2=value
 ```
+
+# License
+
+The project is licensed under [MIT License](./LICENSE)
