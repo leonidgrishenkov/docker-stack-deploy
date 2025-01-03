@@ -3,7 +3,7 @@ name: "Docker Stack/Swarm Deploy"
 description: "Deploy a Docker stack on a Docker Swarm"
 author: "leonidgrishenkov"
 branding:
-  icon: shield
+  icon: anchor
   color: gray-dark
 inputs:
   registry:
