@@ -1,4 +1,5 @@
 ---
+# yamllint disable rule:line-length
 name: "Docker Stack/Swarm Deploy"
 description: "Deploy a Docker stack on a Docker Swarm"
 author: "leonidgrishenkov"
@@ -46,7 +47,7 @@ inputs:
     required: false
     default: ""
   env_file:
-    description: "Additional environment variables in the format VAR_01=VALUE\nVAR_02=VALUE"
+    description: "Additional environment variables in the format VAR1=value\nVAR2=value"
     required: false
     default: ""
   debug:

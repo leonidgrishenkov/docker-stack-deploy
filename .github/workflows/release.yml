@@ -1,6 +1,6 @@
 ---
 # yamllint disable rule:line-length
-name: Release Image
+name: Release
 
 on:
   push:
