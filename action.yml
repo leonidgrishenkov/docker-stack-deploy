@@ -4,7 +4,7 @@ description: "Deploy a Docker stack on a Docker Swarm"
 author: "leonidgrishenkov"
 branding:
   icon: anchor
-  color: gray-dark
+  color: blue
 inputs:
   registry:
     description: "Container registry to use"
